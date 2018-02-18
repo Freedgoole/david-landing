@@ -1,0 +1,64 @@
+@colorheadText: #4cb027;
+@colorText: #4e4e4e;
+@headFonts: 'Fregat_bold',serif;
+
+.top-section {
+    box-sizing: border-box;
+    height: 600px;
+    background: url('../img/bg-headBlock.png') no-repeat;
+    background-size: cover;
+    padding: 85px 0;
+}
+.top-section--descr {
+    padding: 0 12px;
+    width: 43%;
+    text-align: left;
+}
+.top-section--title {
+    color: @colorheadText;
+    font-size: 28px;
+    font-family: @headFonts;
+    margin-top: 35px;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+}
+.top-section--txt {
+    letter-spacing: 0.1px;
+    font-size: 19px;
+    color: @colorText;
+    line-height: 26px;
+    margin-bottom: 29px;
+}
+
+.btn {
+    margin: 52px 18px 0 14px;
+    border: 2px solid @colorheadText;
+    border-radius: 3px;
+    background: none;
+    font-size: 14.63px;
+    text-transform: uppercase;
+    font-family: @headFonts;
+    color: @colorheadText;
+    padding: 14px 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+.btn:hover {
+    background-color: @colorheadText;
+    color: #ffffff;
+}
+.btn-active {
+    padding: 14px 42px;
+    color: #ffffff;
+    background-color: @colorheadText;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+.btn-active:hover {
+    color: @colorheadText;
+    border: 2px solid @colorheadText;
+    background: none;
+}

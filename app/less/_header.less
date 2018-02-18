@@ -1,0 +1,32 @@
+@colorText: #4cb027;
+@sectionColor: #63b945;
+@fontFamily:  Fregat_regular, serif;
+@colorNav: #363636;
+@headerBg: #ffffff;
+
+.container {
+    width: 1172px;
+    margin: 0 auto;
+    font-family: @fontFamily;
+}
+.main-header { 
+    background-color: @headerBg;
+}
+.header-wrapper {
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    color: @colorNav;
+    font-size: 14px;
+    font-family: @fontFamily;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.2px;
+}
+.nav-item:not(:first-child)::before {
+    content: '\2022';
+    margin-right: 5px;
+}

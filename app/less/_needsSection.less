@@ -1,0 +1,36 @@
+@colorBg: #4cb027;
+@colorTextWhite: #ffffff;
+@headFonts: Fregat_bold,serif;
+@fontFamily:  Fregat_regular, serif;
+
+.needs-section {
+    height: 220px;
+    background-color: @colorBg;   
+}
+.needs-section--wrapper {
+    display: flex;
+    padding: 0 14px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.needs-section--col {
+    width: 50%;
+}
+.needs-section--title {
+    font-size: 20px;
+    font-family: @headFonts;
+    color: @colorTextWhite;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+.needs-section--item {
+    color: @colorTextWhite;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: @fontFamily;
+}
+.needs-section--item::before {
+    content: '\203A';
+    margin: 0 7px 0 18px;
+}
